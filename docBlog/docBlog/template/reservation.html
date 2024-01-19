@@ -1,0 +1,25 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static  'css/styles.css' %}">
+    <link rel="icon" href="{% static 'image/avion.jpg' %}">
+    <script src="{% static 'js/reservation.js' %}"></script>
+    <title>Welcome</title>
+</head>
+<body>
+    <div class="head" id="scaling">
+        <div class="submit">
+            <h1>RESERVER DES MAINTENANT ... 🤖</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta, tempore ipsam minus culpa architecto exercitationem voluptate eveniet fugit perspiciatis voluptas amet eius repellendus id laborum veniam soluta aut unde odit.</p>
+            <input type="email" name="email" placeholder="Entrez votre email">
+            <input type="submit" value="SOUMETTRE">
+        </div>
+        <div class="image">
+            <img src="{% static 'image/avion.jpg' %}" alt="">
+        </div>
+    </div>
+</body>
+</html>

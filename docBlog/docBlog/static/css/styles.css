@@ -1,0 +1,80 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+@font-face {
+    font-family: 'popins';
+    src: url(../font/poppins.ttf);
+}
+@font-face {
+    font-family: 'corinthia';
+    src: url(../font/corinthia.ttf);
+}
+
+body{
+    background-image: url('../image/3216670-transport-aeroport-pour-site-web-template-or-landing-homepage-banner-gratuit-vectoriel.jpg');
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    overflow: hidden;
+}
+.head{
+    display: flex;
+    align-items: center;
+    height: 100vh;
+    padding: 0 150px;
+}
+.submit{
+    font-family: 'popins';
+}
+.submit input{
+    margin: 0 25%;
+    padding: 5px 20px;
+}
+.submit input:hover{
+    background-color: green;
+    color: white;
+    box-shadow: 0 0 5px red;
+}
+.image{
+    width: 50%;
+}
+.image img{
+    animation-name: avion;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    width: 420px;
+}
+#scaling{
+    transform: scale(0);
+    transition: 1s ease;
+}
+@keyframes avion{
+    0%{
+        transform: translateY(25px);
+    }
+    50%{
+        transform: translateY(0);
+    }
+    100%{
+        transform: translateY(25px);
+    }
+}
+@media screen and (max-width:1000px){
+    .head .image img{
+        display: none;
+    }
+    .head{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    .head button{
+        margin-top: 40px;
+    }
+    .head .submit{
+        margin: 0;
+    }
+}
